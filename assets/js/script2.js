@@ -23,21 +23,28 @@ var question44 = {
   answers: [ "Javascript", "terminal/bash", "for loops", "console.log"],
   correct: "console.log",
 }
+
 var count = 75;
 var timer = setInterval(function() {
   console.log(count);
-  
-  var answer1 = document.getElementById('0');
-  answer1.textContent = question1[0];
-  var answer2 = document.getElementById('1')
-  answer2.textContent = question1[1];
   count--;
+    var question = document.getElementById('question-text');
+    question.textContent = question11.q;
+    var answer1 = document.getElementById('0');
+    answer1.textContent = question11.answers[0];
+    var answer2 = document.getElementById('1')
+    answer2.textContent = question11.answers[1];
+    var answer3 = document.getElementById('2')
+    answer3.textContent = question11.answers[2];
+    var answer4 = document.getElementById('3')
+    answer4.textContent = question11.answers[3];
   
-  
+  console.log(answer1);
   if(count === 0) {
     stopInterval()
   }
   document.getElementById("countdown-timer").innerHTML = count
+  populate();
 }, 1000);
 
 
@@ -45,6 +52,9 @@ var stopInterval = function() {
   console.log('time is up!');
   clearInterval(timer);
 }
+
+
+
 
 setInterval();
 stopInterval();
