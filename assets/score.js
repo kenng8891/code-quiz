@@ -8,11 +8,11 @@ function printHighscores() {
 
   highscores.forEach(function (score) {
     // initial for each score
-    var liTag = document.createElement("li");
-    liTag.textContent = score.initials + " - " + score.score;
+    var scoreTag = document.createElement("li");
+    scoreTag.textContent = score.initials + " - " + score.score;
 
     var olEl = document.getElementById("highscores");
-    olEl.appendChild(liTag);
+    olEl.appendChild(scoreTag);
   });
 }
 

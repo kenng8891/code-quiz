@@ -81,13 +81,6 @@ function questionClick() {
     feedbackEl.style.fontSize = "400%";
   }
 
-  // flash right/wrong feedback
-  feedbackEl.setAttribute("class", "feedback");
-  setTimeout(function () {
-    feedbackEl.setAttribute("class", "feedback hide");
-  }, 1000);
-
-  // next question
   currentQuestionIndex++;
 
   // time checker
@@ -99,14 +92,13 @@ function questionClick() {
 }
 
 function quizEnd() {
-  // stop timer
   clearInterval(timerId);
 
   // show end screen
   var endScreenEl = document.getElementById("end-screen");
   endScreenEl.removeAttribute("class");
 
-  // show final score
+  
   var finalScoreEl = document.getElementById("final-score");
   finalScoreEl.textContent = time;
 
