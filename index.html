@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge Yourself with Code</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <header id="header">
+      <h1>Javascript Coding Quiz</h1>
+      <p>Test your javascript knowledge with a multiple choice assessment</p>
+      <p>Coding quiz will test how well you know javascript basics</p>
+    </header>
+
+    <div class="wrapper">
+      <div id="start-screen" class="start">
+        <p>
+          Answer the questions as quickly as you can to get a better score,
+          incorrect answers will result in a 15 second score/time penalty.
+        </p>
+        <button id="start" class="start-button">Start Code Quiz</button>
+      </div>
+
+      <div id="questions" class="hide">
+        <div class="timer">Time: <span id="time">0</span></div>
+        <h2 id="question-title"></h2>
+        <div id="choices" class="choices"></div>
+      </div>
+
+      <div id="end-screen" class="hide">
+        <div class="scores"><a href="score.html">View Highscores</a></div>
+        <h2>All done!</h2>
+        <p>Your final score is <span id="final-score"></span>.</p>
+        <p>
+          Enter initials: <input type="text" id="initials" max="3" />
+          <button id="submit">Submit</button>
+        </p>
+      </div>
+
+      <div id="feedback" class="feedback hide"></div>
+    </div>
+
+    <script src="./assets/questions.js"></script>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>

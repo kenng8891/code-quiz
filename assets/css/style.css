@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  align-items: center;
+}
+
+:root {
+  --primary: #081ea8;
+  --secondary: #000000;
+  --tertiary: #c90606;
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--secondary);
+  color: var(--tertiary);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-style: normal;
+  font-family: "Times New Roman", serif, monospace;
+  text-align: center;
+}
+
+header {
+  background: var(--secondary);
+  margin: 10px auto 0 auto;
+  padding: 30px 25px;
+  font-size: 20px;
+  border: solid 15px var(--primary);
+}
+h1 {
+  font-size: 50px;
+}
+
+header p {
+  color: var(--tertiary);
+  margin: 5px 0 20px;
+  font-size: 25px;
+  text-align: center;
+  text-justify: inner-character;
+}
+
+h2 {
+  font-size: 30px;
+}
+/*classes*/
+.wrapper {
+  margin: 10px auto 0 auto;
+  max-width: 600px;
+  height: 100vh;
+  color: white;
+}
+.wrapper ol {
+  background: var(--tertiary);
+  color: black;
+}
+
+#questions {
+  padding-bottom: 500px;
+}
+.start-button {
+  margin: 0 auto;
+}
+.choices button {
+  display: block;
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
+}
+
+.start {
+  text-align: center;
+}
+
+.scores {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  font-size: 30px;
+}
+
+.feedback {
+  font-style: italic;
+  margin-top: 20px;
+  padding-top: 10px;
+  color: gray;
+  border-top: 2px solid rgb(201, 193, 193);
+}
+
+.timer {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  font-size: 15px;
+}
+a {
+  color: var(--tertiary);
+  text-decoration: none;
+  transition: color 0.1s;
+  border-radius: 8px;
+}
+
+a:hover {
+  color: var(--primary);
+  border: 800px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  text-align: center;
+  border: 1000px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 19px 24px;
+}
+
+button:hover {
+  background-color: rgb(9, 123, 11);
+}
+
+input[type="text"] {
+  font-size: 100%;
+}
+
+ol {
+  padding-left: 0px;
+  max-height: 400px;
+}
+
+li {
+  padding: 5px;
+  list-style: decimal inside none;
+}
+
+li:nth-child(odd) {
+  background-color: #dfdae7;
+}
+
+p {
+  font-size: 20px;
+}
